@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/elegentlogo.jpeg" type="image/x-icon">
+  <title>ELEGANT BUTTONS</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us on WhatsApp</h1>
+    <p>Click the button below to start a conversation with us on WhatsApp.</p>
+    <button id="whatsapp-btn">Start Chat</button>
+  </div>
+
+  <script>
+    document.getElementById("whatsapp-btn").addEventListener("click", function() {
+    // Replace '1234567890' with your WhatsApp business phone number
+    var phoneNumber = "9311167177";
+    
+    // Open WhatsApp chat with the specified phone number
+    window.open("https://wa.me/" + phoneNumber, "_blank");
+  });
+  
+  </script>
+</body>
+</html>
